@@ -2,7 +2,7 @@ let display = document.querySelector('.display'),
     prevBtn = document.querySelector('.left'),
     nxtBtn = document.querySelector('.right'),
     days = document.querySelector('.days'),
-    // selected = document.querySelector('.selected');
+    selected = document.querySelector('.selected');
 
 let dateToday = new Date();
 let year = dateToday.getFullYear();
@@ -64,7 +64,7 @@ function displaySelected () {
 }
     prevBtn.addEventListener('click', () =>{
         days.innerHTML = '';
-        selected.innerHTML ='';
+        // selected.innerHTML ='';
         if (month<0){
             month = 11;
             year = year -1;
@@ -77,7 +77,7 @@ function displaySelected () {
 
      nxtBtn.addEventListener('click', () =>{
         days.innerHTML = '';
-        selected.innerHTML ='';
+        // selected.innerHTML ='';
         if (month>11){
             month = 0;
             year = year +1;
