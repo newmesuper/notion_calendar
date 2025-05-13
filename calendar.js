@@ -2,7 +2,7 @@ let display = document.querySelector('.display'),
     prevBtn = document.querySelector('.left'),
     nxtBtn = document.querySelector('.right'),
     days = document.querySelector('.days'),
-    selected = document.querySelector('.selected');
+    // selected = document.querySelector('.selected');
 
 let dateToday = new Date();
 let year = dateToday.getFullYear();
@@ -50,17 +50,17 @@ function displayCalendar(){
 }
 
 displayCalendar()
-displaySelected()
+// displaySelected()
 
-function displaySelected () {
-    const daysEL = document.querySelectorAll('.days div');
-    daysEL.forEach(day => {
-        day.addEventListener('click', (e) => {
-        const selectedDate = e.target.dataset.date;
-        selected.innerText = `선택일 : ${selectedDate}`;
-        })
+// function displaySelected () {
+//     const daysEL = document.querySelectorAll('.days div');
+//     daysEL.forEach(day => {
+//         day.addEventListener('click', (e) => {
+//         const selectedDate = e.target.dataset.date;
+//         selected.innerText = `선택일 : ${selectedDate}`;
+//         })
         
-    });
+//     });
 }
     prevBtn.addEventListener('click', () =>{
         days.innerHTML = '';
@@ -72,7 +72,7 @@ function displaySelected () {
         month = month -1;
         dateToday.setMonth(month);
         displayCalendar();
-        displaySelected();
+        // displaySelected();
     });
 
      nxtBtn.addEventListener('click', () =>{
@@ -85,5 +85,5 @@ function displaySelected () {
         month = month +1;
         dateToday.setMonth(month);
         displayCalendar();
-        displaySelected();
+        // displaySelected();
     });
