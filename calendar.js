@@ -26,7 +26,7 @@ function displayCalendar(){
 
 
     
-    for (let x = 1; x < firstDayIdx; x++) {
+    for (let x = 0; x < firstDayIdx; x++) {
         let div = document.createElement ('div');
         div.innerHTML += '';
         days.appendChild(div);
