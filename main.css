@@ -69,12 +69,6 @@ header {
         }
 }
 
-.display-selected {
-    margin-top: 10px;
-    text-align: center;
-    padding: 20px;
-}
-
 .today {
     background: var(--accent);
     color: var(--white);
