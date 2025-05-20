@@ -10,7 +10,6 @@ body{
     align-items: start;
     align-items: center;
     background: var(--main);
-    box-sizing: border-box;
 }
 .container{
     background: var(--white);
@@ -22,6 +21,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 
