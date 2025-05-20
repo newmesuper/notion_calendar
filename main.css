@@ -10,13 +10,13 @@ body{
     align-items: start;
     align-items: center;
     background: var(--main);
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 .container{
     background: var(--white);
     border-radius: 25px;
     padding: 0 1em;
-    min-height: 200px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
