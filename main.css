@@ -9,12 +9,12 @@ body{
     display: flex;
     align-items: start;
     align-items: center;
-    background: var(--main);
+  
 }
 .container{
     background: var(--white);
     border-radius: 25px;
-    padding: 0 1em;
+    padding: 0 1em 1em;
     height: fit-content;
     display: flex;
     flex-direction: row;
