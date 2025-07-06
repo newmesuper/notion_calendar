@@ -32,7 +32,7 @@ function displayCalendar(){
         days.appendChild(div);
     }
 
-    for  (let i = 1; i < numberOfDays; i++) {
+    for  (let i = 1; i <= numberOfDays; i++) {
         let div = document.createElement ('div');
         let currentDate = new Date(year, month, i);
         div.dataset.date = currentDate.toDateString();
